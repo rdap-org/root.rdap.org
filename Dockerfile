@@ -1,8 +1,8 @@
 FROM alpine:latest
 
-RUN apk update
+RUN apk -q update
 
-RUN apk add nginx
+RUN apk -q add nginx
 
 ADD nginx.conf /etc/nginx/nginx.conf
 
